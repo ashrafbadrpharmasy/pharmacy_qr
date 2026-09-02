@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>صيدلية د. أشرف بدر</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, "Tahoma", sans-serif;
+    background: linear-gradient(145deg, #07121d, #122536);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+  }
+  .card {
+    width: min(430px, 100%);
+    background: rgba(255,255,255,.075);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 28px;
+    padding: 24px 20px 28px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.38);
+    backdrop-filter: blur(12px);
+    text-align: center;
+  }
+  .logo {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 18px;
+    display: block;
+    margin: 0 auto 18px;
+  }
+  h1 {
+    margin: 0;
+    font-size: 25px;
+    color: #76c7ff;
+  }
+  .subtitle {
+    margin: 7px 0 24px;
+    color: #b8c7d4;
+    font-size: 15px;
+  }
+  .buttons {
+    display: grid;
+    gap: 13px;
+  }
+  .btn {
+    text-decoration: none;
+    color: white;
+    min-height: 58px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    font-size: 18px;
+    font-weight: 700;
+    transition: transform .15s ease, opacity .15s ease;
+  }
+  .btn:active { transform: scale(.98); opacity: .88; }
+  .location { background: #1687c9; }
+  .call { background: #2d9b62; }
+  .whatsapp { background: #20a85a; }
+  .icon { font-size: 23px; }
+  .footer {
+    margin-top: 20px;
+    color: #8497a8;
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+  <main class="card">
+    <img class="logo" src="logo.jpg" alt="صيدلية د. أشرف بدر">
+    <h1>Dr. Ashraf Badr Pharmacy</h1>
+    <p class="subtitle">Choose an option</p>
+
+    <div class="buttons">
+      <a class="btn location" href="https://maps.app.goo.gl/mPXNBf4XXBj1M6J39" target="_blank" rel="noopener">
+        <span class="icon">📍</span> Location
+      </a>
+
+      <a class="btn call" href="tel:01227968585">
+        <span class="icon">📞</span> Call Us
+      </a>
+
+      <a class="btn whatsapp" href="https://wa.me/201158771600" target="_blank" rel="noopener">
+        <span class="icon">💬</span> WhatsApp
+      </a>
+    </div>
+
+    <div class="footer">Dr. Ashraf Badr Pharmacy</div>
+  </main>
+</body>
+</html>
