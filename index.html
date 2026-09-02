@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Dr. Ashraf Badr Pharmacy</title>
 
     <style>
@@ -14,151 +15,105 @@
             margin: 0;
             min-height: 100vh;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #06152b, #0b3155);
+            background:
+                radial-gradient(circle at top, #164b78 0%, transparent 45%),
+                linear-gradient(135deg, #041226, #082c4d);
+
             color: white;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 25px;
+
+            overflow-x: hidden;
         }
 
+        /* Main Card */
         .card {
             width: 100%;
             max-width: 480px;
-            padding: 30px 22px;
-            border-radius: 25px;
+
+            padding: 35px 22px;
+
+            border-radius: 28px;
+
             background: rgba(255, 255, 255, 0.08);
             border: 1px solid rgba(255, 255, 255, 0.18);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
-            backdrop-filter: blur(15px);
+
+            box-shadow:
+                0 25px 60px rgba(0, 0, 0, 0.4);
+
+            backdrop-filter: blur(18px);
+
             text-align: center;
+
+            animation: cardAppear 0.8s ease-out;
         }
 
+        /* Logo */
         .logo {
-            width: 120px;
-            height: 120px;
+            width: 125px;
+            height: 125px;
+
             object-fit: contain;
+
             border-radius: 50%;
-            margin-bottom: 15px;
+
             background: white;
+
+            padding: 5px;
+
+            margin-bottom: 15px;
+
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+            animation: logoAppear 1s ease-out;
         }
 
+        /* Title */
         h1 {
             margin: 5px 0 8px;
-            font-size: 28px;
+
+            font-size: 29px;
+
+            animation: fadeUp 0.8s ease-out;
         }
 
         .subtitle {
-            margin: 0 0 25px;
-            opacity: 0.75;
+            margin: 0 0 30px;
+
             font-size: 16px;
+
+            opacity: 0.7;
+
+            animation: fadeUp 1s ease-out;
         }
 
-        .buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
+        /* Sections */
+        .section {
+            margin-top: 28px;
+
+            text-align: left;
+
+            animation: fadeUp 0.8s ease-out;
         }
 
-        .button {
-            display: block;
-            width: 100%;
-            padding: 16px;
-            border-radius: 15px;
-            color: white;
-            text-decoration: none;
+        .section-title {
+            text-align: center;
+
             font-size: 17px;
+
+            margin-bottom: 13px;
+
+            color: #ffffff;
+
             font-weight: bold;
-            background: rgba(255, 255, 255, 0.12);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            transition: 0.2s;
         }
 
-        .button:hover {
-            background: rgba(255, 255, 255, 0.22);
-            transform: translateY(-2px);
+        .section-title span {
+            opacity: 0.7;
         }
 
-        .button:active {
-            transform: scale(0.98);
-        }
-
-        .review {
-            margin-top: 15px;
-            background: #4285f4;
-            border: none;
-        }
-
-        .review:hover {
-            background: #5a95f5;
-        }
-
-        .footer {
-            margin-top: 25px;
-            font-size: 13px;
-            opacity: 0.55;
-        }
-    </style>
-</head>
-
-<body>
-
-    <div class="card">
-
-        <img
-            src="logo.jpg"
-            alt="Dr. Ashraf Badr Pharmacy Logo"
-            class="logo"
-        >
-
-        <h1>Dr. Ashraf Badr Pharmacy</h1>
-
-        <p class="subtitle">Choose an option</p>
-
-        <div class="buttons">
-
-            <a class="button"
-               href="https://maps.app.goo.gl/mPXNBf4XXBj1M6J39">
-                📍 Location
-            </a>
-
-            <a class="button"
-               href="tel:01227968585">
-                📞 Call Us
-            </a>
-
-            <a class="button"
-               href="https://wa.me/201158771600">
-                💬 WhatsApp
-            </a>
-
-            <a class="button"
-               href="https://www.tiktok.com/@dr..ashraf.badr.p">
-                🎵 TikTok
-            </a>
-
-            <a class="button"
-               href="https://www.facebook.com/share/19Yt9Wzjpy/">
-                📘 Facebook
-            </a>
-
-            <a class="button"
-               href="https://www.instagram.com/dr.ashrafbadr">
-                📷 Instagram
-            </a>
-
-            <a class="button review"
-               href="https://search.google.com/local/writereview?placeid=ChIJaa8srbc-WBQR9-FhP7xNOA0">
-                ⭐ Rate Us on Google
-            </a>
-
-        </div>
-
-        <div class="footer">
-            Dr. Ashraf Badr Pharmacy
-        </div>
-
-    </div>
-
-</body>
-</html>
+        /* Buttons */
+        .buttons {
+            display:
