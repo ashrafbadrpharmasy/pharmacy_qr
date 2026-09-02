@@ -1,99 +1,278 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>صيدلية د. أشرف بدر</title>
-<style>
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    min-height: 100vh;
-    font-family: Arial, "Tahoma", sans-serif;
-    background: linear-gradient(145deg, #07121d, #122536);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 24px;
-  }
-  .card {
-    width: min(430px, 100%);
-    background: rgba(255,255,255,.075);
-    border: 1px solid rgba(255,255,255,.12);
-    border-radius: 28px;
-    padding: 24px 20px 28px;
-    box-shadow: 0 20px 60px rgba(0,0,0,.38);
-    backdrop-filter: blur(12px);
-    text-align: center;
-  }
-  .logo {
-    width: 100%;
-    max-width: 360px;
-    border-radius: 18px;
-    display: block;
-    margin: 0 auto 18px;
-  }
-  h1 {
-    margin: 0;
-    font-size: 25px;
-    color: #76c7ff;
-  }
-  .subtitle {
-    margin: 7px 0 24px;
-    color: #b8c7d4;
-    font-size: 15px;
-  }
-  .buttons {
-    display: grid;
-    gap: 13px;
-  }
-  .btn {
-    text-decoration: none;
-    color: white;
-    min-height: 58px;
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 11px;
-    font-size: 18px;
-    font-weight: 700;
-    transition: transform .15s ease, opacity .15s ease;
-  }
-  .btn:active { transform: scale(.98); opacity: .88; }
-  .location { background: #1687c9; }
-  .call { background: #2d9b62; }
-  .whatsapp { background: #20a85a; }
-  .icon { font-size: 23px; }
-  .footer {
-    margin-top: 20px;
-    color: #8497a8;
-    font-size: 12px;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dr. Ashraf Badr Pharmacy</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #071b33, #0b3150, #071b33);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: white;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 430px;
+      padding: 30px 22px;
+      border-radius: 25px;
+
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(12px);
+
+      text-align: center;
+    }
+
+    .logo {
+      width: 130px;
+      height: 130px;
+      object-fit: contain;
+      border-radius: 50%;
+      background: white;
+      padding: 8px;
+      margin-bottom: 18px;
+
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      opacity: 0.8;
+      margin-bottom: 25px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+
+    .btn {
+      width: 100%;
+      min-height: 58px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      border-radius: 15px;
+
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+
+      transition: transform 0.2s ease,
+                  opacity 0.2s ease,
+                  box-shadow 0.2s ease;
+
+      box-shadow: 0 7px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.92;
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .icon {
+      font-size: 23px;
+      width: 28px;
+      text-align: center;
+    }
+
+    /* Main buttons */
+
+    .location {
+      background: #1683ff;
+    }
+
+    .call {
+      background: #16a34a;
+    }
+
+    .whatsapp {
+      background: #25d366;
+    }
+
+    /* Social buttons */
+
+    .tiktok {
+      background: #111111;
+    }
+
+    .facebook {
+      background: #1877f2;
+    }
+
+    .instagram {
+      background: #c13584;
+    }
+
+    .social-title {
+      margin: 25px 0 13px;
+      font-size: 15px;
+      opacity: 0.75;
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 13px;
+      opacity: 0.55;
+    }
+
+    @media (max-width: 380px) {
+      .card {
+        padding: 25px 17px;
+      }
+
+      h1 {
+        font-size: 23px;
+      }
+
+      .btn {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <main class="card">
-    <img class="logo" src="logo.jpg" alt="صيدلية د. أشرف بدر">
+
+  <div class="card">
+
+    <!-- Pharmacy Logo -->
+    <img
+      src="logo.jpg"
+      alt="Dr. Ashraf Badr Pharmacy Logo"
+      class="logo"
+    >
+
+    <!-- Title -->
     <h1>Dr. Ashraf Badr Pharmacy</h1>
-    <p class="subtitle">Choose an option</p>
 
-    <div class="buttons">
-      <a class="btn location" href="https://maps.app.goo.gl/mPXNBf4XXBj1M6J39" target="_blank" rel="noopener">
-        <span class="icon">📍</span> Location
-      </a>
-
-      <a class="btn call" href="tel:01227968585">
-        <span class="icon">📞</span> Call Us
-      </a>
-
-      <a class="btn whatsapp" href="https://wa.me/201158771600" target="_blank" rel="noopener">
-        <span class="icon">💬</span> WhatsApp
-      </a>
+    <div class="subtitle">
+      Choose an option
     </div>
 
-    <div class="footer">Dr. Ashraf Badr Pharmacy</div>
-  </main>
+
+    <!-- Main Buttons -->
+    <div class="buttons">
+
+      <!-- Location -->
+      <a
+        class="btn location"
+        href="https://maps.app.goo.gl/mPXNBf4XXBj1M6J39"
+        target="_blank"
+        rel="noopener"
+      >
+        <span class="icon">📍</span>
+        Location
+      </a>
+
+
+      <!-- Call -->
+      <a
+        class="btn call"
+        href="tel:01227968585"
+      >
+        <span class="icon">📞</span>
+        Call Us
+      </a>
+
+
+      <!-- WhatsApp -->
+      <a
+        class="btn whatsapp"
+        href="https://wa.me/201158771600"
+        target="_blank"
+        rel="noopener"
+      >
+        <span class="icon">💬</span>
+        WhatsApp
+      </a>
+
+    </div>
+
+
+    <!-- Social Media -->
+    <div class="social-title">
+      Follow us on social media
+    </div>
+
+
+    <div class="buttons">
+
+      <!-- TikTok -->
+      <a
+        class="btn tiktok"
+        href="https://www.tiktok.com/@dr..ashraf.badr.p"
+        target="_blank"
+        rel="noopener"
+      >
+        <span class="icon">♪</span>
+        TikTok
+      </a>
+
+
+      <!-- Facebook -->
+      <a
+        class="btn facebook"
+        href="https://www.facebook.com/share/19Yt9Wzjpy/"
+        target="_blank"
+        rel="noopener"
+      >
+        <span class="icon">f</span>
+        Facebook
+      </a>
+
+
+      <!-- Instagram -->
+      <a
+        class="btn instagram"
+        href="https://www.instagram.com/dr.ashrafbadr"
+        target="_blank"
+        rel="noopener"
+      >
+        <span class="icon">◎</span>
+        Instagram
+      </a>
+
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+      Dr. Ashraf Badr Pharmacy
+    </div>
+
+  </div>
+
 </body>
 </html>
