@@ -4,73 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Ashraf Badr Pharmacy</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #06152b, #0b3155);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 480px;
+            padding: 30px 22px;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(15px);
+            text-align: center;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            background: white;
+        }
+
+        h1 {
+            margin: 5px 0 8px;
+            font-size: 28px;
+        }
+
+        .subtitle {
+            margin: 0 0 25px;
+            opacity: 0.75;
+            font-size: 16px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            border-radius: 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: rgba(255, 255, 255, 0.22);
+            transform: translateY(-2px);
+        }
+
+        .button:active {
+            transform: scale(0.98);
+        }
+
+        .review {
+            margin-top: 15px;
+            background: #4285f4;
+            border: none;
+        }
+
+        .review:hover {
+            background: #5a95f5;
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 13px;
+            opacity: 0.55;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>💊 Dr. Ashraf Badr Pharmacy</h1>
+    <div class="card">
 
-    <h2>Choose an option</h2>
+        <img
+            src="logo.jpg"
+            alt="Dr. Ashraf Badr Pharmacy Logo"
+            class="logo"
+        >
 
-    <hr>
+        <h1>Dr. Ashraf Badr Pharmacy</h1>
 
-    <h3>Contact</h3>
+        <p class="subtitle">Choose an option</p>
 
-    <p>
-        <a href="https://maps.app.goo.gl/mPXNBf4XXBj1M6J39">
-            📍 Location
-        </a>
-    </p>
+        <div class="buttons">
 
-    <p>
-        <a href="tel:01227968585">
-            📞 Call Us
-        </a>
-    </p>
+            <a class="button"
+               href="https://maps.app.goo.gl/mPXNBf4XXBj1M6J39">
+                📍 Location
+            </a>
 
-    <p>
-        <a href="https://wa.me/201158771600">
-            💬 WhatsApp
-        </a>
-    </p>
+            <a class="button"
+               href="tel:01227968585">
+                📞 Call Us
+            </a>
 
-    <hr>
+            <a class="button"
+               href="https://wa.me/201158771600">
+                💬 WhatsApp
+            </a>
 
-    <h3>Social Media</h3>
+            <a class="button"
+               href="https://www.tiktok.com/@dr..ashraf.badr.p">
+                🎵 TikTok
+            </a>
 
-    <p>
-        <a href="https://www.tiktok.com/@dr..ashraf.badr.p">
-            🎵 TikTok
-        </a>
-    </p>
+            <a class="button"
+               href="https://www.facebook.com/share/19Yt9Wzjpy/">
+                📘 Facebook
+            </a>
 
-    <p>
-        <a href="https://www.facebook.com/share/19Yt9Wzjpy/">
-            📘 Facebook
-        </a>
-    </p>
+            <a class="button"
+               href="https://www.instagram.com/dr.ashrafbadr">
+                📷 Instagram
+            </a>
 
-    <p>
-        <a href="https://www.instagram.com/dr.ashrafbadr">
-            📷 Instagram
-        </a>
-    </p>
+            <a class="button review"
+               href="https://search.google.com/local/writereview?placeid=ChIJaa8srbc-WBQR9-FhP7xNOA0">
+                ⭐ Rate Us on Google
+            </a>
 
-    <hr>
+        </div>
 
-    <h3>⭐ Rate Us</h3>
+        <div class="footer">
+            Dr. Ashraf Badr Pharmacy
+        </div>
 
-    <p>
-        <a href="https://search.google.com/local/writereview?placeid=ChIJaa8srbc-WBQR9-FhP7xNOA0">
-            ⭐ Rate Us on Google
-        </a>
-    </p>
-
-    <hr>
-
-    <p>
-        Dr. Ashraf Badr Pharmacy
-    </p>
+    </div>
 
 </body>
 </html>
