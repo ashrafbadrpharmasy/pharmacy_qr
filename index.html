@@ -3,428 +3,95 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <!-- IMPORTANT: Connect HTML to CSS -->
+    <link rel="stylesheet" href="style.css">
 
     <title>Dr. Ashraf Badr Pharmacy</title>
-
-    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
-    <!-- LANGUAGE BUTTON -->
-
-    <div class="language-switcher">
-
-        <button
-            id="englishBtn"
-            class="active"
-            onclick="setLanguage('en')"
-        >
-            🇬🇧 English
-        </button>
-
-        <button
-            id="arabicBtn"
-            onclick="setLanguage('ar')"
-        >
-            🇪🇬 العربية
-        </button>
-
+    <!-- Language Switch -->
+    <div class="language-switch">
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('ar')">العربية</button>
     </div>
-
-
-    <!-- MAIN CARD -->
 
     <main class="card">
 
+        <!-- Pharmacy Logo -->
+        <img src="logo.jpg" class="logo" alt="Dr. Ashraf Badr Pharmacy">
 
-        <!-- PHARMACY LOGO -->
+        <!-- English Content -->
+        <div id="english">
 
-        <div class="logo-container">
+            <h1>Dr. Ashraf Badr Pharmacy</h1>
+            <p class="subtitle">Your Health, Our Priority</p>
 
-            <img
-                src="logo.jpg"
-                alt="Dr. Ashraf Badr Pharmacy"
-                class="logo"
-            >
+            <!-- Contact -->
+            <h2>Contact Us</h2>
+
+            <a class="button" href="tel:01227968585">
+                <img src="images.jpeg" alt="Call">
+                <span>Call Us</span>
+            </a>
+
+            <a class="button" href="https://wa.me/201158771600" target="_blank">
+                <img src="Untitled.png" alt="WhatsApp">
+                <span>WhatsApp</span>
+            </a>
+
+            <a class="button" href="https://maps.app.goo.gl/mPXNBf4XXBj1M6J39" target="_blank">
+                <img src="imes.jpeg" alt="Google Maps">
+                <span>Location</span>
+            </a>
+
+            <!-- Payment -->
+            <h2>Payment</h2>
+
+            <a class="button" href="https://ipn.eg/S/ashraf1985badr/instapay/8vWtq2" target="_blank">
+                <img src="InstaPay_Logo.png" alt="InstaPay">
+                <span>InstaPay</span>
+            </a>
+
+            <a class="button" href="https://vf.eg/vfcash?id=mt&qrId=gwJgD8" target="_blank">
+                <img src="vodafone.png" alt="Vodafone Cash">
+                <span>Vodafone Cash</span>
+            </a>
+
+            <!-- Social Media -->
+            <h2>Follow Us</h2>
+
+            <a class="button" href="https://www.facebook.com/share/19Yt9Wzjpy/" target="_blank">
+                <img src="images.png" alt="Facebook">
+                <span>Facebook</span>
+            </a>
+
+            <a class="button" href="https://www.instagram.com/dr.ashrafbadr" target="_blank">
+                <img src="instgram.jpeg" alt="Instagram">
+                <span>Instagram</span>
+            </a>
+
+            <a class="button" href="https://www.tiktok.com/@dr..ashraf.badr.p" target="_blank">
+                <img src="tiktok.png" alt="TikTok">
+                <span>TikTok</span>
+            </a>
+
+            <!-- Google Review -->
+            <h2>Rate Us</h2>
+
+            <a class="button" href="https://search.google.com/local/writereview?placeid=ChIJaa8srbc-WBQR9-FhP7xNOA0"
+                target="_blank">
+                <span class="review-star">★</span>
+                <span>Rate Us on Google</span>
+            </a>
 
         </div>
 
 
-        <!-- TITLE -->
+        <!-- Arabic Content -->
+        <div id="arabic" dir="rtl">
 
-        <h1
-            data-en="Dr. Ashraf Badr Pharmacy"
-            data-ar="صيدلية د. أشرف بدر"
-        >
-            Dr. Ashraf Badr Pharmacy
-        </h1>
-
-
-        <p
-            class="subtitle"
-            data-en="Your health is our priority"
-            data-ar="صحتك هي أولويتنا"
-        >
-            Your health is our priority
-        </p>
-
-
-        <!-- =========================
-             CONTACT
-        ========================== -->
-
-        <section class="section">
-
-            <h2
-                data-en="Contact Us"
-                data-ar="تواصل معنا"
-            >
-                Contact Us
-            </h2>
-
-
-            <div class="buttons">
-
-
-                <!-- LOCATION -->
-
-                <a
-                    class="button"
-                    href="https://maps.app.goo.gl/mPXNBf4XXBj1M6J39"
-                    target="_blank"
-                    rel="noopener"
-                >
-
-                    <img
-                        src="imes.jpeg"
-                        alt="Location"
-                    >
-
-                    <span
-                        data-en="Find Our Location"
-                        data-ar="موقع الصيدلية"
-                    >
-                        Find Our Location
-                    </span>
-
-                </a>
-
-
-                <!-- CALL -->
-
-                <a
-                    class="button"
-                    href="tel:01227968585"
-                >
-
-                    <img
-                        src="images.jpeg"
-                        alt="Call"
-                    >
-
-                    <span
-                        data-en="Call Us"
-                        data-ar="اتصل بنا"
-                    >
-                        Call Us
-                    </span>
-
-                </a>
-
-
-                <!-- WHATSAPP -->
-
-                <a
-                    class="button whatsapp-button"
-                    href="https://wa.me/201158771600"
-                    target="_blank"
-                    rel="noopener"
-                >
-
-                    <img
-                        src="Untitled.png"
-                        alt="WhatsApp"
-                    >
-
-                    <span
-                        data-en="WhatsApp"
-                        data-ar="واتساب"
-                    >
-                        WhatsApp
-                    </span>
-
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             PAYMENT
-        ========================== -->
-
-        <section class="section">
-
-            <h2
-                data-en="Payment"
-                data-ar="الدفع"
-            >
-                Payment
-            </h2>
-
-
-            <div class="buttons">
-
-
-                <!-- INSTAPAY -->
-
-                <a
-                    class="button instapay-button"
-                    href="https://ipn.eg/S/ashraf1985badr/instapay/8vWtq2"
-                    target="_blank"
-                    rel="noopener"
-                >
-
-                    <img
-                        src="InstaPay_Logo.png"
-                        alt="InstaPay"
-                    >
-
-                    <span
-                        data-en="Pay with InstaPay"
-                        data-ar="الدفع عبر InstaPay"
-                    >
-                        Pay with InstaPay
-                    </span>
-
-                </a>
-
-
-                <!-- VODAFONE CASH -->
-
-                <a
-                    class="button vodafone-button"
-                    href="https://vf.eg/vfcash?id=mt&qrId=gwJgD8"
-                    target="_blank"
-                    rel="noopener"
-                >
-
-                    <img
-                        src="vodafone.png"
-                        alt="Vodafone Cash"
-                    >
-
-                    <span
-                        data-en="Pay with Vodafone Cash"
-                        data-ar="الدفع عبر Vodafone Cash"
-                    >
-                        Pay with Vodafone Cash
-                    </span>
-
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             SOCIAL MEDIA
-        ========================== -->
-
-        <section class="section">
-
-            <h2
-                data-en="Follow Us on Social Media"
-                data-ar="تابعنا على وسائل التواصل"
-            >
-                Follow Us on Social Media
-            </h2>
-
-
-            <div class="buttons">
-
-
-                <!-- TIKTOK -->
-
-                <a
-                    class="button"
-                    href="https://www.tiktok.com/@dr..ashraf.badr.p"
-                    target="_blank"
-                    rel="noopener"
-                >
-
-                    <img
-                        src="tiktok.png"
-                        alt="TikTok"
-                    >
-
-                    <span>
-                        TikTok
-                    </span>
-
-                </a>
-
-
-                <!-- FACEBOOK -->
-
-                <a
-                    class="button"
-                    href="https://www.facebook.com/share/19Yt9Wzjpy/"
-                    target="_blank"
-                    rel="noopener"
-                >
-
-                    <img
-                        src="images.png"
-                        alt="Facebook"
-                    >
-
-                    <span>
-                        Facebook
-                    </span>
-
-                </a>
-
-
-                <!-- INSTAGRAM -->
-
-                <a
-                    class="button"
-                    href="https://www.instagram.com/dr.ashrafbadr"
-                    target="_blank"
-                    rel="noopener"
-                >
-
-                    <img
-                        src="instgram.jpeg"
-                        alt="Instagram"
-                    >
-
-                    <span>
-                        Instagram
-                    </span>
-
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             GOOGLE REVIEW
-        ========================== -->
-
-        <section class="section">
-
-            <h2
-                data-en="Rate Us on Google"
-                data-ar="قيّمنا على Google"
-            >
-                Rate Us on Google
-            </h2>
-
-
-            <div class="buttons">
-
-                <a
-                    class="button review-button"
-                    href="https://search.google.com/local/writereview?placeid=ChIJaa8srbc-WBQR9-FhP7xNOA0"
-                    target="_blank"
-                    rel="noopener"
-                >
-
-                    <span class="review-star">
-                        ⭐
-                    </span>
-
-                    <span
-                        data-en="Leave a Google Review"
-                        data-ar="اترك تقييمًا على Google"
-                    >
-                        Leave a Google Review
-                    </span>
-
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- FOOTER -->
-
-        <footer
-            class="footer"
-            data-en="Dr. Ashraf Badr Pharmacy"
-            data-ar="صيدلية د. أشرف بدر"
-        >
-            Dr. Ashraf Badr Pharmacy
-        </footer>
-
-
-    </main>
-
-
-    <!-- LANGUAGE SCRIPT -->
-
-    <script>
-
-        function setLanguage(language) {
-
-            const elements =
-                document.querySelectorAll("[data-en]");
-
-            elements.forEach(function(element) {
-
-                element.textContent =
-                    element.getAttribute("data-" + language);
-
-            });
-
-
-            const englishBtn =
-                document.getElementById("englishBtn");
-
-            const arabicBtn =
-                document.getElementById("arabicBtn");
-
-
-            if (language === "ar") {
-
-                document.documentElement.lang = "ar";
-
-                document.body.classList.add("rtl");
-
-                arabicBtn.classList.add("active");
-
-                englishBtn.classList.remove("active");
-
-            } else {
-
-                document.documentElement.lang = "en";
-
-                document.body.classList.remove("rtl");
-
-                englishBtn.classList.add("active");
-
-                arabicBtn.classList.remove("active");
-
-            }
-
-        }
-
-    </script>
-
-</body>
-
-</html>
+            <h1>صيدلية د
