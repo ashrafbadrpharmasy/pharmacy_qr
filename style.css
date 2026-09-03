@@ -1,91 +1,61 @@
-/* ================================
-   FIX BUTTON ICONS
-   ================================ */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    background: #071a2f;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+}
 
 .button {
-    display: grid;
-    grid-template-columns: 50px 1fr 50px;
-    align-items: center;
-    width: 100%;
-    min-height: 58px;
-    box-sizing: border-box;
-    position: relative;
+    display: grid !important;
+    grid-template-columns: 50px 1fr 50px !important;
+    align-items: center !important;
+
+    width: 100% !important;
+    height: 60px !important;
+
+    margin: 12px 0 !important;
+    padding: 8px !important;
+
+    background: rgba(255,255,255,0.12) !important;
+    border: 1px solid rgba(255,255,255,0.2) !important;
+    border-radius: 15px !important;
+
+    color: white !important;
+    text-decoration: none !important;
+
+    overflow: hidden !important;
 }
 
-/* كل الأيقونات لها نفس المكان والحجم */
 .button img {
-    grid-column: 1;
+    grid-column: 1 !important;
+
     width: 34px !important;
     height: 34px !important;
+
     max-width: 34px !important;
     max-height: 34px !important;
-    min-width: 34px;
-    min-height: 34px;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
+
+    object-fit: contain !important;
+
+    margin: auto !important;
 }
 
-/* النص في المنتصف */
-.button span:not(.review-star) {
-    grid-column: 2;
-    text-align: center;
-    width: 100%;
-}
+.button span {
+    grid-column: 2 !important;
 
-/* زر Google Review */
-.button .review-star {
-    grid-column: 1;
-    font-size: 28px;
-    text-align: center;
-    width: 100%;
-}
+    text-align: center !important;
 
-/* ================================
-   ARABIC / RTL
-   ================================ */
-
-body.rtl .button {
-    grid-template-columns: 50px 1fr 50px;
-}
-
-body.rtl .button img {
-    grid-column: 3;
-}
-
-body.rtl .button span:not(.review-star) {
-    grid-column: 2;
-}
-
-body.rtl .button .review-star {
-    grid-column: 3;
-}
-
-/* ================================
-   MOBILE
-   ================================ */
-
-@media (max-width: 480px) {
-
-    .button {
-        grid-template-columns: 46px 1fr 46px;
-        min-height: 56px;
-    }
-
-    .button img {
-        width: 32px !important;
-        height: 32px !important;
-        max-width: 32px !important;
-        max-height: 32px !important;
-        min-width: 32px;
-        min-height: 32px;
-    }
-
-    .button .review-star {
-        font-size: 26px;
-    }
-
-    body.rtl .button {
-        grid-template-columns: 46px 1fr 46px;
-    }
+    color: white !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
 }
