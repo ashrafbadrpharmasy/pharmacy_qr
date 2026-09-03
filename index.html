@@ -1,243 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Dr. Ashraf Badr Pharmacy</title>
 
-    <style>
+    <!-- External CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            min-height: 100vh;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #06152b, #0b3155);
-            color: white;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            padding: 20px;
-        }
-
-        .card {
-            width: 100%;
-            max-width: 480px;
-
-            padding: 30px 22px;
-
-            border-radius: 25px;
-
-            background: rgba(255, 255, 255, 0.08);
-
-            border: 1px solid rgba(255, 255, 255, 0.18);
-
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
-
-            text-align: center;
-
-            animation: appear 0.8s ease;
-        }
-
-        .logo {
-            width: 120px;
-            height: 120px;
-
-            object-fit: contain;
-
-            border-radius: 50%;
-
-            margin-bottom: 15px;
-
-            background: white;
-
-            animation: logo 0.8s ease;
-        }
-
-        h1 {
-            font-size: 28px;
-            margin: 5px 0 8px;
-        }
-
-        .subtitle {
-            font-size: 16px;
-            opacity: 0.75;
-            margin-bottom: 30px;
-        }
-
-        .section {
-            margin-top: 25px;
-
-            animation: sectionAppear 0.7s ease both;
-        }
-
-        .section-title {
-            font-size: 18px;
-            font-weight: bold;
-
-            margin-bottom: 12px;
-        }
-
-        .buttons {
-            display: flex;
-            flex-direction: column;
-
-            gap: 12px;
-        }
-
-        .button {
-            display: block;
-
-            width: 100%;
-
-            padding: 16px;
-
-            border-radius: 15px;
-
-            color: white;
-
-            text-decoration: none;
-
-            font-size: 17px;
-
-            font-weight: bold;
-
-            background: rgba(255, 255, 255, 0.12);
-
-            border: 1px solid rgba(255, 255, 255, 0.18);
-
-            transition: 0.25s;
-        }
-
-        .button:hover {
-            background: rgba(255, 255, 255, 0.22);
-
-            transform: translateY(-3px);
-        }
-
-        .button:active {
-            transform: scale(0.97);
-        }
-
-        .review {
-            background: #4285f4;
-
-            border: none;
-        }
-
-        .review:hover {
-            background: #357ae8;
-        }
-
-        .footer {
-            margin-top: 25px;
-
-            font-size: 13px;
-
-            opacity: 0.5;
-        }
-
-
-        /* Animations */
-
-        @keyframes appear {
-
-            from {
-                opacity: 0;
-                transform: translateY(25px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-
-        }
-
-        @keyframes logo {
-
-            from {
-                opacity: 0;
-                transform: scale(0.6);
-            }
-
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-
-        }
-
-        @keyframes sectionAppear {
-
-            from {
-                opacity: 0;
-                transform: translateY(15px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-
-        }
-
-    </style>
 </head>
 
 
 <body>
 
+    <!-- LANGUAGE SWITCHER -->
+
+    <div class="language-switcher">
+
+        <button
+            id="englishBtn"
+            class="active"
+            onclick="setLanguage('en')"
+        >
+            🇬🇧 English
+        </button>
+
+        <button
+            id="arabicBtn"
+            onclick="setLanguage('ar')"
+        >
+            🇪🇬 العربية
+        </button>
+
+    </div>
+
+
+    <!-- MAIN CARD -->
+
     <div class="card">
 
-        <img
-            src="logo.jpg"
-            alt="Dr. Ashraf Badr Pharmacy Logo"
-            class="logo"
-        >
 
-        <h1>
+        <!-- LOGO -->
+
+        <div class="logo-container">
+
+            <img
+                src="logo.jpg"
+                alt="Dr. Ashraf Badr Pharmacy"
+                class="logo"
+            >
+
+        </div>
+
+
+        <!-- TITLE -->
+
+        <h1
+            id="title"
+            data-en="Dr. Ashraf Badr Pharmacy"
+            data-ar="صيدلية د. أشرف بدر"
+        >
             Dr. Ashraf Badr Pharmacy
         </h1>
 
-        <p class="subtitle">
+
+        <p
+            class="subtitle"
+            id="subtitle"
+            data-en="Your health is our priority"
+            data-ar="صحتك هي أولويتنا"
+        >
             Your health is our priority
         </p>
 
 
-        <!-- CONTACT -->
+        <!-- =====================
+             CONTACT SECTION
+        ====================== -->
 
         <div class="section">
 
-            <div class="section-title">
+            <div
+                class="section-title"
+                data-en="📞 Contact Us"
+                data-ar="📞 تواصل معنا"
+            >
                 📞 Contact Us
             </div>
 
+
             <div class="buttons">
+
 
                 <a
                     class="button"
                     href="https://maps.app.goo.gl/mPXNBf4XXBj1M6J39"
+                    target="_blank"
+                    rel="noopener"
+                    data-en="📍 Find Our Location"
+                    data-ar="📍 موقع الصيدلية"
                 >
                     📍 Find Our Location
                 </a>
 
+
                 <a
                     class="button"
                     href="tel:01227968585"
+                    data-en="📞 Call Us"
+                    data-ar="📞 اتصل بنا"
                 >
                     📞 Call Us
                 </a>
 
+
                 <a
-                    class="button"
+                    class="button whatsapp-button"
                     href="https://wa.me/201158771600"
+                    target="_blank"
+                    rel="noopener"
+                    data-en="💬 WhatsApp"
+                    data-ar="💬 واتساب"
                 >
                     💬 WhatsApp
                 </a>
@@ -247,33 +140,101 @@
         </div>
 
 
-        <!-- SOCIAL MEDIA -->
+        <!-- =====================
+             PAYMENT SECTION
+        ====================== -->
 
         <div class="section">
 
-            <div class="section-title">
+            <div
+                class="section-title"
+                data-en="💳 Payment"
+                data-ar="💳 الدفع"
+            >
+                💳 Payment
+            </div>
+
+
+            <div class="buttons">
+
+
+                <a
+                    class="button payment-button"
+                    href="https://ipn.eg/S/ashraf1985badr/instapay/8vWtq2"
+                    target="_blank"
+                    rel="noopener"
+                    data-en="💙 Pay with InstaPay"
+                    data-ar="💙 الدفع عبر InstaPay"
+                >
+                    💙 Pay with InstaPay
+                </a>
+
+
+                <a
+                    class="button vodafone-button"
+                    href="https://vf.eg/vfcash?id=mt&qrId=gwJgD8"
+                    target="_blank"
+                    rel="noopener"
+                    data-en="🔴 Pay with Vodafone Cash"
+                    data-ar="🔴 الدفع عبر Vodafone Cash"
+                >
+                    🔴 Pay with Vodafone Cash
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================
+             SOCIAL MEDIA
+        ====================== -->
+
+        <div class="section">
+
+            <div
+                class="section-title"
+                data-en="🌐 Follow Us on Social Media"
+                data-ar="🌐 تابعنا على وسائل التواصل"
+            >
                 🌐 Follow Us on Social Media
             </div>
 
+
             <div class="buttons">
+
 
                 <a
                     class="button"
                     href="https://www.tiktok.com/@dr..ashraf.badr.p"
+                    target="_blank"
+                    rel="noopener"
+                    data-en="🎵 TikTok"
+                    data-ar="🎵 TikTok"
                 >
                     🎵 TikTok
                 </a>
 
+
                 <a
                     class="button"
                     href="https://www.facebook.com/share/19Yt9Wzjpy/"
+                    target="_blank"
+                    rel="noopener"
+                    data-en="📘 Facebook"
+                    data-ar="📘 Facebook"
                 >
                     📘 Facebook
                 </a>
 
+
                 <a
                     class="button"
                     href="https://www.instagram.com/dr.ashrafbadr"
+                    target="_blank"
+                    rel="noopener"
+                    data-en="📷 Instagram"
+                    data-ar="📷 Instagram"
                 >
                     📷 Instagram
                 </a>
@@ -283,19 +244,30 @@
         </div>
 
 
-        <!-- GOOGLE REVIEW -->
+        <!-- =====================
+             GOOGLE REVIEW
+        ====================== -->
 
         <div class="section">
 
-            <div class="section-title">
+            <div
+                class="section-title"
+                data-en="⭐ Rate Us on Google"
+                data-ar="⭐ قيّمنا على Google"
+            >
                 ⭐ Rate Us on Google
             </div>
+
 
             <div class="buttons">
 
                 <a
-                    class="button review"
+                    class="button review-button"
                     href="https://search.google.com/local/writereview?placeid=ChIJaa8srbc-WBQR9-FhP7xNOA0"
+                    target="_blank"
+                    rel="noopener"
+                    data-en="⭐ Leave a Google Review"
+                    data-ar="⭐ اترك تقييمًا على Google"
                 >
                     ⭐ Leave a Google Review
                 </a>
@@ -305,11 +277,72 @@
         </div>
 
 
-        <div class="footer">
+        <!-- FOOTER -->
+
+        <div
+            class="footer"
+            data-en="Dr. Ashraf Badr Pharmacy"
+            data-ar="صيدلية د. أشرف بدر"
+        >
             Dr. Ashraf Badr Pharmacy
         </div>
 
+
     </div>
 
+
+    <!-- =====================
+         LANGUAGE SCRIPT
+    ====================== -->
+
+    <script>
+
+        function setLanguage(language) {
+
+            const elements =
+                document.querySelectorAll("[data-en]");
+
+            elements.forEach(function(element) {
+
+                element.textContent =
+                    element.getAttribute("data-" + language);
+
+            });
+
+
+            const englishButton =
+                document.getElementById("englishBtn");
+
+            const arabicButton =
+                document.getElementById("arabicBtn");
+
+
+            if (language === "ar") {
+
+                document.documentElement.lang = "ar";
+
+                document.body.classList.add("rtl");
+
+                arabicButton.classList.add("active");
+
+                englishButton.classList.remove("active");
+
+            } else {
+
+                document.documentElement.lang = "en";
+
+                document.body.classList.remove("rtl");
+
+                englishButton.classList.add("active");
+
+                arabicButton.classList.remove("active");
+
+            }
+
+        }
+
+    </script>
+
 </body>
+
 </html>
