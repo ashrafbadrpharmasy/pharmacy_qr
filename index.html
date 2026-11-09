@@ -1,197 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="./style.css">
-
-    <title>Dr. Ashraf Badr Pharmacy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071a2f">
+  <meta name="description" content="Official links for Dr. Ashraf Badr Pharmacy. Contact, location, payments and social media.">
+  <title>Dr. Ashraf Badr Pharmacy</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
 
-    <!-- Language Switch -->
-    <div class="language-switch">
-        <button onclick="setLanguage('en')">English</button>
-        <button onclick="setLanguage('ar')">العربية</button>
+  <header class="topbar">
+    <a class="brand-mini" href="#" aria-label="Dr. Ashraf Badr Pharmacy home">
+      <span class="brand-mark">+</span>
+      <span>ASHRAF BADR <small>PHARMACY</small></span>
+    </a>
+    <div class="language-switch" aria-label="Choose language">
+      <button type="button" class="lang-btn active" id="englishBtn" onclick="setLanguage('en')">EN</button>
+      <span class="lang-divider"></span>
+      <button type="button" class="lang-btn" id="arabicBtn" onclick="setLanguage('ar')">عربي</button>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="logo-wrap">
+        <img src="logo.jpg" class="logo" alt="Dr. Ashraf Badr Pharmacy logo">
+      </div>
+      <div class="eyebrow"><span class="eyebrow-dot"></span><span data-en="YOUR TRUSTED PHARMACY" data-ar="صيدليتك الموثوقة">YOUR TRUSTED PHARMACY</span></div>
+      <div id="english" class="language-content">
+        <h1>Dr. Ashraf Badr <span>Pharmacy</span></h1>
+        <p class="hero-subtitle">Your health, our priority.</p>
+        <p class="hero-description">Everything you need, all in one place.</p>
+      </div>
+      <div id="arabic" class="language-content" dir="rtl" hidden>
+        <h1>صيدلية د. أشرف بدر</h1>
+        <p class="hero-subtitle">صحتك تهمنا.</p>
+        <p class="hero-description">كل روابطنا وخدماتنا في مكان واحد.</p>
+      </div>
+      <div class="trust-line"><span class="trust-icon">✦</span><span data-en="Care • Trust • Quality" data-ar="رعاية • ثقة • جودة">Care • Trust • Quality</span></div>
+    </section>
+
+    <div class="content-grid">
+      <section class="link-section">
+        <div class="section-heading">
+          <span class="section-icon">↗</span>
+          <div><p class="section-kicker" data-en="WE'RE HERE FOR YOU" data-ar="نحن هنا لمساعدتك">WE'RE HERE FOR YOU</p><h2 data-en="Get in touch" data-ar="تواصل معنا">Get in touch</h2></div>
+        </div>
+        <div class="links-grid">
+          <a class="link-card primary-link" href="tel:01227968585">
+            <span class="link-icon"><img src="images.jpeg" alt=""></span><span class="link-copy"><strong data-en="Call us" data-ar="اتصل بنا">Call us</strong><small data-en="Speak with our pharmacy" data-ar="تحدث مع الصيدلية">Speak with our pharmacy</small></span><span class="link-arrow">↗</span>
+          </a>
+          <a class="link-card whatsapp-link" href="https://wa.me/201158771600" target="_blank" rel="noopener noreferrer">
+            <span class="link-icon"><img src="Untitled.png" alt=""></span><span class="link-copy"><strong>WhatsApp</strong><small data-en="Message us directly" data-ar="راسلنا مباشرة">Message us directly</small></span><span class="link-arrow">↗</span>
+          </a>
+          <a class="link-card" href="https://maps.app.goo.gl/mPXNBf4XXBj1M6J39" target="_blank" rel="noopener noreferrer">
+            <span class="link-icon"><img src="imes.jpeg" alt=""></span><span class="link-copy"><strong data-en="Find us" data-ar="موقعنا">Find us</strong><small data-en="Open Google Maps" data-ar="افتح الموقع على خرائط جوجل">Open Google Maps</small></span><span class="link-arrow">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="link-section">
+        <div class="section-heading">
+          <span class="section-icon">◇</span>
+          <div><p class="section-kicker" data-en="FAST & EASY" data-ar="بسهولة وأمان">FAST & EASY</p><h2 data-en="Payment methods" data-ar="طرق الدفع">Payment methods</h2></div>
+        </div>
+        <div class="links-grid">
+          <a class="link-card" href="https://ipn.eg/S/ashraf1985badr/instapay/8vWtq2" target="_blank" rel="noopener noreferrer">
+            <span class="link-icon"><img src="InstaPay_Logo.png" alt=""></span><span class="link-copy"><strong>InstaPay</strong><small data-en="Pay securely" data-ar="ادفع بسهولة">Pay securely</small></span><span class="link-arrow">↗</span>
+          </a>
+          <a class="link-card" href="https://vf.eg/vfcash?id=mt&qrId=gwJgD8" target="_blank" rel="noopener noreferrer">
+            <span class="link-icon"><img src="vodafone.png" alt=""></span><span class="link-copy"><strong>Vodafone Cash</strong><small data-en="Quick mobile payment" data-ar="دفع سريع بالموبايل">Quick mobile payment</small></span><span class="link-arrow">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="link-section">
+        <div class="section-heading">
+          <span class="section-icon">◎</span>
+          <div><p class="section-kicker" data-en="STAY CONNECTED" data-ar="تابع كل جديد">STAY CONNECTED</p><h2 data-en="Follow our pages" data-ar="تابع صفحاتنا">Follow our pages</h2></div>
+        </div>
+        <div class="links-grid">
+          <a class="link-card" href="https://www.facebook.com/share/19Yt9Wzjpy/" target="_blank" rel="noopener noreferrer">
+            <span class="link-icon"><img src="images.png" alt=""></span><span class="link-copy"><strong>Facebook</strong><small data-en="News and updates" data-ar="الأخبار والتحديثات">News and updates</small></span><span class="link-arrow">↗</span>
+          </a>
+          <a class="link-card" href="https://www.instagram.com/dr.ashrafbadr" target="_blank" rel="noopener noreferrer">
+            <span class="link-icon"><img src="instgram.jpeg" alt=""></span><span class="link-copy"><strong>Instagram</strong><small data-en="Follow our updates" data-ar="تابع آخر أخبارنا">Follow our updates</small></span><span class="link-arrow">↗</span>
+          </a>
+          <a class="link-card" href="https://www.tiktok.com/@dr..ashraf.badr.p" target="_blank" rel="noopener noreferrer">
+            <span class="link-icon"><img src="tiktok.png" alt=""></span><span class="link-copy"><strong>TikTok</strong><small data-en="Watch our videos" data-ar="شاهد فيديوهاتنا">Watch our videos</small></span><span class="link-arrow">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="review-panel">
+        <div class="review-star">★</div>
+        <div class="review-copy">
+          <p class="section-kicker" data-en="YOUR OPINION MATTERS" data-ar="رأيك يهمنا">YOUR OPINION MATTERS</p>
+          <h2 data-en="Enjoyed our service?" data-ar="سعدنا بخدمتك؟">Enjoyed our service?</h2>
+          <p data-en="Share your experience and help others find us." data-ar="شارك تجربتك وساعد الآخرين في الوصول إلينا.">Share your experience and help others find us.</p>
+        </div>
+        <a class="review-button" href="https://search.google.com/local/writereview?placeid=ChIJaa8srbc-WBQR9-FhP7xNOA0" target="_blank" rel="noopener noreferrer"><span data-en="Rate us on Google" data-ar="قيّمنا على Google">Rate us on Google</span><span>↗</span></a>
+      </section>
     </div>
 
-    <main class="card">
+    <footer class="footer">
+      <span class="footer-mark">+</span>
+      <p data-en="Dr. Ashraf Badr Pharmacy" data-ar="صيدلية د. أشرف بدر">Dr. Ashraf Badr Pharmacy</p>
+      <small data-en="Your health, our priority." data-ar="صحتك تهمنا.">Your health, our priority.</small>
+    </footer>
+  </main>
 
-        <!-- Pharmacy Logo -->
-        <img src="logo.jpg" class="logo" alt="Dr. Ashraf Badr Pharmacy">
-
-        <!-- ================= ENGLISH ================= -->
-
-        <section id="english">
-
-            <h1>Dr. Ashraf Badr Pharmacy</h1>
-            <p class="subtitle">Your Health, Our Priority</p>
-
-            <!-- Contact -->
-            <h2>Contact Us</h2>
-
-            <a class="button" href="tel:01227968585">
-                <img src="images.jpeg" alt="Call">
-                <span>Call Us</span>
-            </a>
-
-            <a class="button" href="https://wa.me/201158771600" target="_blank">
-                <img src="Untitled.png" alt="WhatsApp">
-                <span>WhatsApp</span>
-            </a>
-
-            <a class="button" href="https://maps.app.goo.gl/mPXNBf4XXBj1M6J39" target="_blank">
-                <img src="imes.jpeg" alt="Google Maps">
-                <span>Location</span>
-            </a>
-
-            <!-- Payment -->
-            <h2>Payment</h2>
-
-            <a class="button" href="https://ipn.eg/S/ashraf1985badr/instapay/8vWtq2" target="_blank">
-                <img src="InstaPay_Logo.png" alt="InstaPay">
-                <span>InstaPay</span>
-            </a>
-
-            <a class="button" href="https://vf.eg/vfcash?id=mt&qrId=gwJgD8" target="_blank">
-                <img src="vodafone.png" alt="Vodafone Cash">
-                <span>Vodafone Cash</span>
-            </a>
-
-            <!-- Social Media -->
-            <h2>Follow Us on Social Media</h2>
-
-            <a class="button" href="https://www.facebook.com/share/19Yt9Wzjpy/" target="_blank">
-                <img src="images.png" alt="Facebook">
-                <span>Facebook</span>
-            </a>
-
-            <a class="button" href="https://www.instagram.com/dr.ashrafbadr" target="_blank">
-                <img src="instgram.jpeg" alt="Instagram">
-                <span>Instagram</span>
-            </a>
-
-            <a class="button" href="https://www.tiktok.com/@dr..ashraf.badr.p" target="_blank">
-                <img src="tiktok.png" alt="TikTok">
-                <span>TikTok</span>
-            </a>
-
-            <!-- Google Review -->
-            <h2>Rate Us</h2>
-
-            <a class="button" href="https://search.google.com/local/writereview?placeid=ChIJaa8srbc-WBQR9-FhP7xNOA0"
-                target="_blank">
-
-                <span class="review-star">★</span>
-                <span>Rate Us on Google</span>
-
-            </a>
-
-        </section>
-
-
-        <!-- ================= ARABIC ================= -->
-
-        <section id="arabic" dir="rtl">
-
-            <h1>صيدلية د. أشرف بدر</h1>
-            <p class="subtitle">صحتك تهمنا</p>
-
-            <!-- التواصل -->
-            <h2>تواصل معنا</h2>
-
-            <a class="button" href="tel:01227968585">
-                <img src="images.jpeg" alt="اتصال">
-                <span>اتصل بنا</span>
-            </a>
-
-            <a class="button" href="https://wa.me/201158771600" target="_blank">
-                <img src="Untitled.png" alt="واتساب">
-                <span>واتساب</span>
-            </a>
-
-            <a class="button" href="https://maps.app.goo.gl/mPXNBf4XXBj1M6J39" target="_blank">
-                <img src="imes.jpeg" alt="الموقع">
-                <span>الموقع</span>
-            </a>
-
-            <!-- الدفع -->
-            <h2>الدفع</h2>
-
-            <a class="button" href="https://ipn.eg/S/ashraf1985badr/instapay/8vWtq2" target="_blank">
-                <img src="InstaPay_Logo.png" alt="InstaPay">
-                <span>إنستا باي</span>
-            </a>
-
-            <a class="button" href="https://vf.eg/vfcash?id=mt&qrId=gwJgD8" target="_blank">
-                <img src="vodafone.png" alt="فودافون كاش">
-                <span>Vodafone Cash</span>
-            </a>
-
-            <!-- السوشيال ميديا -->
-            <h2>تابعنا على السوشيال ميديا</h2>
-
-            <a class="button" href="https://www.facebook.com/share/19Yt9Wzjpy/" target="_blank">
-                <img src="images.png" alt="فيسبوك">
-                <span>Facebook</span>
-            </a>
-
-            <a class="button" href="https://www.instagram.com/dr.ashrafbadr" target="_blank">
-                <img src="instgram.jpeg" alt="إنستجرام">
-                <span>Instagram</span>
-            </a>
-
-            <a class="button" href="https://www.tiktok.com/@dr..ashraf.badr.p" target="_blank">
-                <img src="tiktok.png" alt="تيك توك">
-                <span>TikTok</span>
-            </a>
-
-            <!-- التقييم -->
-            <h2>قيّمنا</h2>
-
-            <a class="button" href="https://search.google.com/local/writereview?placeid=ChIJaa8srbc-WBQR9-FhP7xNOA0"
-                target="_blank">
-
-                <span class="review-star">★</span>
-                <span>قيّمنا على Google</span>
-
-            </a>
-
-        </section>
-
-    </main>
-
-
-    <!-- Language JavaScript -->
-    <script>
-        function setLanguage(language) {
-
-            const english = document.getElementById("english");
-            const arabic = document.getElementById("arabic");
-
-            if (language === "ar") {
-
-                english.style.display = "none";
-                arabic.style.display = "block";
-
-                document.documentElement.lang = "ar";
-
-            } else {
-
-                english.style.display = "block";
-                arabic.style.display = "none";
-
-                document.documentElement.lang = "en";
-            }
-        }
-
-        // English by default
-        setLanguage("en");
-    </script>
-
+  <script>
+    function setLanguage(language) {
+      const isArabic = language === "ar";
+      document.documentElement.lang = isArabic ? "ar" : "en";
+      document.body.classList.toggle("is-arabic", isArabic);
+      document.getElementById("english").hidden = isArabic;
+      document.getElementById("arabic").hidden = !isArabic;
+      document.getElementById("englishBtn").classList.toggle("active", !isArabic);
+      document.getElementById("arabicBtn").classList.toggle("active", isArabic);
+      document.querySelectorAll("[data-en][data-ar]").forEach((element) => {
+        element.textContent = isArabic ? element.dataset.ar : element.dataset.en;
+      });
+    }
+    setLanguage("en");
+  </script>
 </body>
 </html>
